@@ -1,0 +1,40 @@
+# Pinpop — one-command self-hosting.
+#   cp .env.example .env   # adjust PUBLIC_URL, APP_SECRET, POSTGRES_PASSWORD (and optionally AI_*)
+#   docker compose up -d
+# Then open http://localhost:3000 — the first account you create becomes the admin.
+
+services:
+  pinpop:
+    image: ghcr.io/polatai/pinpop:latest
+    build: .
+    restart: unless-stopped
+    ports:
+      - "${PINPOP_PORT:-3000}:3000"
+    env_file: .env
+    environment:
+      DATABASE_URL: postgres://pinpop:${POSTGRES_PASSWORD:-pinpop}@db:5432/pinpop
+      DATA_DIR: /data
+    volumes:
+      - pinpop-data:/data
+    depends_on:
+      db:
+        condition: service_healthy
+
+  db:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: pinpop
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-pinpop}
+      POSTGRES_DB: pinpop
+    volumes:
+      - pinpop-db:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U pinpop -d pinpop"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  pinpop-data:
+  pinpop-db:

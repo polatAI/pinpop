@@ -1,0 +1,349 @@
+{
+  "landing": {
+    "badge": "Open source · AI-powered · Self-hostable",
+    "titleA": "Live quizzes that",
+    "titleB": "pop.",
+    "subtitle": "{{name}} turns any classroom, meetup or party into a game show. Write questions or let AI do it, share a PIN, and play together in real time.",
+    "pinLabel": "Game PIN",
+    "pinPlaceholder": "Enter game PIN",
+    "joinButton": "Join",
+    "createCta": "Create a quiz",
+    "githubCta": "Star on GitHub",
+    "joinCta": "Join a game",
+    "howTitle": "Three steps to a great game",
+    "steps": {
+      "create": {
+        "title": "Create",
+        "text": "Build a quiz in minutes with 8 question types, or generate one from a topic, PDF or web page with AI."
+      },
+      "host": {
+        "title": "Host",
+        "text": "Put the host screen on a projector. Players join from any phone with a PIN or QR code, no app needed."
+      },
+      "play": {
+        "title": "Play",
+        "text": "Answer fast, build streaks, climb the leaderboard. Get a detailed report when the confetti settles."
+      }
+    },
+    "featuresTitle": "Everything you need, nothing you don't",
+    "featuresSubtitle": "Built in the open by the community. Use it for free on this site or run it on your own server.",
+    "features": {
+      "types": {
+        "title": "8 question types",
+        "text": "Quiz, multi-select, true/false, type answer, slider, ordering, polls and word clouds."
+      },
+      "ai": {
+        "title": "AI question writer",
+        "text": "Generate quizzes from a topic, your notes, a PDF or a web page. Claude, OpenAI, OpenRouter or local Ollama."
+      },
+      "mcp": {
+        "title": "MCP built in",
+        "text": "Ask Claude or Cursor to write a quiz and start a game. Pinpop speaks the Model Context Protocol."
+      },
+      "selfhost": {
+        "title": "One-command self-host",
+        "text": "docker compose up and you're live. Runs even without a database server."
+      },
+      "realtime": {
+        "title": "Real-time at scale",
+        "text": "Hundreds of players per game with instant updates and automatic reconnects."
+      },
+      "reports": {
+        "title": "Reports & exports",
+        "text": "See who struggled where. Export results and quizzes as CSV or JSON."
+      },
+      "opensource": {
+        "title": "Open source",
+        "text": "AGPL-3.0 licensed. Read the code, fork it, improve it together."
+      },
+      "privacy": {
+        "title": "Privacy first",
+        "text": "No ads, no trackers. Players don't need accounts. Export or delete your data anytime."
+      },
+      "i18n": {
+        "title": "Multilingual",
+        "text": "English and Turkish out of the box, with more languages from the community."
+      },
+      "dark": {
+        "title": "Light & dark",
+        "text": "Looks great on a projector, a laptop or a phone in a dark room."
+      }
+    },
+    "selfHostTitle": "Your server, your data",
+    "selfHostText": "Pinpop ships as a single Docker image. Bring PostgreSQL, or let it use its built-in embedded database.",
+    "selfHostPoints": {
+      "one": "Free forever — every feature, no limits",
+      "two": "Bring your own AI key or run a local model",
+      "three": "REST API, OpenAPI docs and webhooks-friendly design"
+    },
+    "selfHostNote": "Then open http://localhost:3000 — the first account becomes the admin.",
+    "finalTitle": "Ready to make your next session unforgettable?"
+  },
+  "auth": {
+    "loginTitle": "Welcome back",
+    "loginSubtitle": "Log in to create and host quizzes.",
+    "registerTitle": "Create your account",
+    "registerSubtitle": "Free forever. Players never need an account.",
+    "email": "Email",
+    "password": "Password",
+    "name": "Name",
+    "passwordHint": "At least 8 characters.",
+    "passwordTooShort": "Password must be at least 8 characters.",
+    "loginButton": "Log in",
+    "registerButton": "Create account",
+    "noAccount": "No account yet?",
+    "registerLink": "Sign up",
+    "haveAccount": "Already have an account?",
+    "loginLink": "Log in",
+    "withGithub": "Continue with GitHub",
+    "withGoogle": "Continue with Google",
+    "or": "or",
+    "oauthFailed": "Signing in with that provider failed. Please try again.",
+    "registrationClosedHint": "Ask the administrator of this server for an account.",
+    "terms": "By signing up you agree to play nice. 🎈"
+  },
+  "dashboard": {
+    "greeting": "Hi {{name}} 👋",
+    "subtitle": "Your quizzes, ready to pop.",
+    "newQuiz": "New quiz",
+    "generateAi": "Generate with AI",
+    "searchPlaceholder": "Search your quizzes…",
+    "emptyTitle": "No quizzes yet",
+    "emptyText": "Create your first quiz from scratch or let AI draft one for you in seconds.",
+    "noResults": "No quizzes match your search",
+    "noResultsHint": "Try a different word.",
+    "more": "More actions",
+    "exportJson": "Export JSON",
+    "exportCsv": "Export CSV",
+    "duplicated": "Quiz duplicated",
+    "deleted": "Quiz deleted",
+    "deleteTitle": "Delete “{{title}}”?",
+    "assign": "Assign as homework"
+  },
+  "import": {
+    "title": "Import a quiz",
+    "description": "Bring in a Pinpop JSON file or a spreadsheet saved as CSV.",
+    "choose": "Choose or drop a file",
+    "formats": ".json (Pinpop) or .csv",
+    "quizTitle": "Quiz title",
+    "unsupported": "Please choose a .json or .csv file.",
+    "csvHelp": "One question per row. Columns: type, question, answer1–answer6, correct (answer number, e.g. 2 or 1,3), time, explanation.",
+    "template": "Download CSV template"
+  },
+  "discover": {
+    "title": "Discover",
+    "subtitle": "Public quizzes made by the community. Play them or make them your own.",
+    "searchPlaceholder": "Search quizzes…",
+    "language": "Language",
+    "allLanguages": "All languages",
+    "sort": "Sort",
+    "popular": "Most played",
+    "recent": "Newest",
+    "emptyTitle": "Nothing found",
+    "emptyText": "Try another search, or publish your own quiz as public."
+  },
+  "detail": {
+    "updated": "Updated {{date}}",
+    "copyToMine": "Copy to my quizzes",
+    "copied": "Copied to your quizzes",
+    "questions": "Questions",
+    "showAnswers": "Show answers",
+    "hideAnswers": "Hide answers",
+    "noQuestions": "This quiz has no questions yet",
+    "notFound": "Quiz not found",
+    "notFoundText": "It may be private or it was deleted."
+  },
+  "reports": {
+    "title": "Reports",
+    "subtitle": "Results of every game you hosted.",
+    "quiz": "Quiz",
+    "date": "Date",
+    "players": "Players",
+    "questions": "Questions",
+    "accuracy": "Accuracy",
+    "open": "Open report",
+    "emptyTitle": "No games yet",
+    "emptyText": "Host a live game and the results will show up here.",
+    "deleted": "Report deleted",
+    "deleteTitle": "Delete this report?",
+    "liveTab": "Live games",
+    "homeworkTab": "Homework"
+  },
+  "reportDetail": {
+    "subtitle": "Played {{date}} · PIN {{pin}}",
+    "downloadCsv": "Download CSV",
+    "duration": "Duration",
+    "leaderboard": "Final leaderboard",
+    "perQuestion": "Question breakdown",
+    "player": "Player",
+    "score": "Score",
+    "correct": "Correct",
+    "hardest": "Hardest",
+    "answered": "{{count}}/{{total}} answered",
+    "avgTime": "avg {{seconds}}s",
+    "noPlayers": "No players in this game",
+    "notFound": "Report not found"
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Manage your profile, AI providers and integrations.",
+    "saved": "Saved",
+    "tabs": {
+      "profile": "Profile",
+      "security": "Security",
+      "ai": "AI",
+      "api": "API & MCP",
+      "data": "Your data"
+    },
+    "profile": {
+      "title": "Profile",
+      "email": "Email",
+      "emailHint": "Your email can't be changed here.",
+      "appearance": "Appearance",
+      "darkMode": "Dark mode",
+      "darkModeHint": "Easier on the eyes in a dark room."
+    },
+    "security": {
+      "passwordTitle": "Password",
+      "passwordHint": "If you signed up with GitHub or Google, leave the current password empty to set one.",
+      "current": "Current password",
+      "new": "New password",
+      "confirm": "Confirm new password",
+      "change": "Change password",
+      "changed": "Password changed",
+      "mismatch": "The passwords don't match.",
+      "sessionsTitle": "Sessions",
+      "sessionsHint": "Signed in on a shared computer? Sign out from every device at once.",
+      "revokeAll": "Sign out everywhere",
+      "revokeConfirm": "You will be signed out on all devices, including this one."
+    },
+    "ai": {
+      "enabled": "AI is ready",
+      "disabled": "AI is not set up",
+      "usingOwn": "Using your personal provider.",
+      "usingInstance": "Using the AI provider configured on this server.",
+      "disabledHint": "Add your own API key below to generate quizzes with AI.",
+      "defaultModel": "default model",
+      "usage": "{{used}}/{{limit}} today",
+      "ownTitle": "Your own AI provider",
+      "ownHint": "Use your own key. It is encrypted on the server and only used for your requests. Leave empty to use the server's AI.",
+      "provider": "Provider",
+      "model": "Model",
+      "modelHint": "Leave empty for the provider's default.",
+      "apiKey": "API key",
+      "keyHint": "Paste your provider API key.",
+      "keepKey": "A key is saved. Leave empty to keep it.",
+      "baseUrl": "Base URL",
+      "remove": "Remove my provider",
+      "removed": "Personal AI provider removed"
+    },
+    "api": {
+      "tokensTitle": "API tokens",
+      "tokensHint": "Tokens let tools like Claude, Cursor or your scripts act on your behalf. Treat them like passwords.",
+      "tokenName": "Token name",
+      "namePlaceholder": "e.g. Claude Desktop",
+      "copyNow": "Copy this token now — you won't be able to see it again.",
+      "done": "I've saved it",
+      "noTokens": "No tokens yet.",
+      "created": "created {{date}}",
+      "lastUsed": "last used {{date}}",
+      "neverUsed": "never used",
+      "deleteTitle": "Delete token “{{name}}”?",
+      "deleteText": "Apps using this token will stop working immediately.",
+      "mcpTitle": "Connect an AI assistant",
+      "mcpHint": "Pinpop includes an MCP server. Connect it and ask your assistant to create quizzes, start games and read results.",
+      "remote": "Remote MCP",
+      "hintClaudeCode": "Run this in your terminal:",
+      "hintClaudeDesktop": "Add this to claude_desktop_config.json (Settings → Developer → Edit config). Requires uv (docs.astral.sh/uv):",
+      "hintCursor": "Add this to ~/.cursor/mcp.json or your project's .cursor/mcp.json. Requires uv (docs.astral.sh/uv):",
+      "hintRemote": "For any client that supports remote MCP over HTTP:",
+      "replaceToken": "Replace <YOUR_TOKEN> with a token created above.",
+      "tryIt": "Then try asking:",
+      "examplePrompt": "Make a 10-question quiz about the solar system for 12-year-olds and start a Pinpop game.",
+      "restTitle": "REST API",
+      "restHint": "Everything in Pinpop is available through a documented REST API. Authenticate with a token as a Bearer header.",
+      "openDocs": "Open API docs"
+    },
+    "data": {
+      "exportTitle": "Export your data",
+      "exportHint": "Download everything Pinpop stores about you: profile, quizzes and game reports (JSON).",
+      "exportButton": "Download my data",
+      "deleteTitle": "Delete account",
+      "deleteHint": "Permanently delete your account, quizzes and reports.",
+      "deleteButton": "Delete my account",
+      "deleteConfirm": "This permanently deletes your account, all your quizzes and reports. This cannot be undone.",
+      "typeDelete": "Type DELETE to confirm",
+      "deleted": "Your account was deleted"
+    }
+  },
+  "admin": {
+    "title": "Admin",
+    "subtitle": "Keep an eye on this Pinpop server.",
+    "forbidden": "Admins only",
+    "forbiddenText": "You need admin rights to view this page.",
+    "users": "Users",
+    "quizzes": "Quizzes",
+    "gamesPlayed": "Games played",
+    "liveGames": "Live games",
+    "memory": "Memory",
+    "uptime": "Uptime",
+    "usersTitle": "Users",
+    "name": "Name",
+    "email": "Email",
+    "joined": "Joined",
+    "role": "Role",
+    "you": "you",
+    "roleUser": "User",
+    "roleAdmin": "Admin",
+    "deleteTitle": "Delete {{name}}?",
+    "deleteText": "This deletes the user together with all their quizzes and reports."
+  },
+  "notFound": {
+    "title": "Oops, wrong answer!",
+    "text": "This page doesn't exist. Maybe it popped?",
+    "home": "Go home"
+  },
+  "assign": {
+    "title": "Assign as homework",
+    "subtitle": "Students play on their own, at their own pace, through a link. No account needed.",
+    "name": "Title",
+    "deadline": "Deadline (optional)",
+    "deadlineHint": "No new attempts are accepted after this time.",
+    "shuffleQuestions": "Shuffle question order",
+    "shuffleAnswers": "Shuffle answer order",
+    "showAnswers": "Show correct answers",
+    "showAnswersHint": "Students see the solution after each question.",
+    "create": "Create link",
+    "readyTitle": "Homework link ready! 🎉",
+    "readyText": "Share this link or QR code with your students.",
+    "link": "Share link",
+    "code": "Code: {{code}}",
+    "viewResults": "View results"
+  },
+  "homework": {
+    "emptyTitle": "No homework yet",
+    "emptyText": "Open the ⋯ menu on a quiz in your dashboard and choose “Assign as homework”.",
+    "open": "Open",
+    "closed": "Closed",
+    "due": "Due {{date}}",
+    "completed": "completed",
+    "avg": "avg. score",
+    "copyLink": "Copy link",
+    "close": "Close",
+    "reopen": "Reopen",
+    "deleteTitle": "Delete this homework?",
+    "deleteText": "All student results will be deleted too.",
+    "back": "All homework",
+    "students": "Students",
+    "accuracy": "Avg. accuracy",
+    "shareLink": "Student link",
+    "noAttempts": "No submissions yet",
+    "noAttemptsText": "Results appear here as soon as students start. This page refreshes automatically.",
+    "student": "Student",
+    "score": "Score",
+    "correct": "Correct",
+    "answers": "Answers",
+    "inProgress": "in progress",
+    "perQuestion": "Per question"
+  }
+}

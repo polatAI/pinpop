@@ -1,0 +1,349 @@
+{
+  "landing": {
+    "badge": "Açık kaynak · Yapay zekâ destekli · Kendi sunucunda",
+    "titleA": "Canlı quizler,",
+    "titleB": "patlasın!",
+    "subtitle": "{{name}} her sınıfı, buluşmayı ya da partiyi bir yarışma şovuna çevirir. Soruları yaz ya da yapay zekâya yazdır, PIN'i paylaş ve gerçek zamanlı birlikte oynayın.",
+    "pinLabel": "Oyun PIN'i",
+    "pinPlaceholder": "Oyun PIN'ini gir",
+    "joinButton": "Katıl",
+    "createCta": "Quiz oluştur",
+    "githubCta": "GitHub'da yıldızla",
+    "joinCta": "Oyuna katıl",
+    "howTitle": "Harika bir oyun için üç adım",
+    "steps": {
+      "create": {
+        "title": "Oluştur",
+        "text": "8 soru tipiyle dakikalar içinde quiz hazırla ya da bir konudan, PDF'ten veya web sayfasından yapay zekâyla üret."
+      },
+      "host": {
+        "title": "Başlat",
+        "text": "Sunucu ekranını projeksiyona yansıt. Oyuncular PIN veya QR kodla her telefondan katılır, uygulama gerekmez."
+      },
+      "play": {
+        "title": "Oyna",
+        "text": "Hızlı cevapla, seri yakala, sıralamada yüksel. Konfetiler indiğinde detaylı raporun hazır."
+      }
+    },
+    "featuresTitle": "İhtiyacın olan her şey, fazlası değil",
+    "featuresSubtitle": "Topluluk tarafından açık şekilde geliştirildi. Bu sitede ücretsiz kullan ya da kendi sunucunda çalıştır.",
+    "features": {
+      "types": {
+        "title": "8 soru tipi",
+        "text": "Quiz, çoklu seçim, doğru/yanlış, yazarak cevap, sayı tahmini, sıralama, anket ve kelime bulutu."
+      },
+      "ai": {
+        "title": "Yapay zekâ soru yazarı",
+        "text": "Bir konudan, notlarından, PDF'ten veya web sayfasından quiz üret. Claude, OpenAI, OpenRouter ya da yerel Ollama."
+      },
+      "mcp": {
+        "title": "Dahili MCP",
+        "text": "Claude'a veya Cursor'a quiz yazdır ve oyunu başlattır. Pinpop, Model Context Protocol'ü konuşur."
+      },
+      "selfhost": {
+        "title": "Tek komutla kurulum",
+        "text": "docker compose up ve yayındasın. Ayrı bir veritabanı sunucusu olmadan bile çalışır."
+      },
+      "realtime": {
+        "title": "Büyük ölçekte gerçek zamanlı",
+        "text": "Oyun başına yüzlerce oyuncu, anlık güncellemeler ve otomatik yeniden bağlanma."
+      },
+      "reports": {
+        "title": "Raporlar ve dışa aktarma",
+        "text": "Kimin nerede zorlandığını gör. Sonuçları ve quizleri CSV veya JSON olarak indir."
+      },
+      "opensource": {
+        "title": "Açık kaynak",
+        "text": "AGPL-3.0 lisanslı. Kodu oku, fork'la, birlikte geliştirelim."
+      },
+      "privacy": {
+        "title": "Önce gizlilik",
+        "text": "Reklam yok, takip yok. Oyuncuların hesaba ihtiyacı yok. Verini istediğin an indir ya da sil."
+      },
+      "i18n": {
+        "title": "Çok dilli",
+        "text": "Kutudan Türkçe ve İngilizce; diğer diller topluluktan geliyor."
+      },
+      "dark": {
+        "title": "Açık ve koyu tema",
+        "text": "Projeksiyonda, dizüstünde ya da karanlık odada telefonda harika görünür."
+      }
+    },
+    "selfHostTitle": "Senin sunucun, senin verin",
+    "selfHostText": "Pinpop tek bir Docker imajı olarak gelir. PostgreSQL bağla ya da dahili gömülü veritabanını kullansın.",
+    "selfHostPoints": {
+      "one": "Sonsuza dek ücretsiz — tüm özellikler, sınırsız",
+      "two": "Kendi AI anahtarını getir ya da yerel model çalıştır",
+      "three": "REST API, OpenAPI dokümanı ve entegrasyon dostu tasarım"
+    },
+    "selfHostNote": "Sonra http://localhost:3000 adresini aç — ilk hesap yönetici olur.",
+    "finalTitle": "Bir sonraki etkinliğini unutulmaz yapmaya hazır mısın?"
+  },
+  "auth": {
+    "loginTitle": "Tekrar hoş geldin",
+    "loginSubtitle": "Quiz oluşturmak ve başlatmak için giriş yap.",
+    "registerTitle": "Hesabını oluştur",
+    "registerSubtitle": "Sonsuza dek ücretsiz. Oyuncuların hesaba ihtiyacı yok.",
+    "email": "E-posta",
+    "password": "Şifre",
+    "name": "Ad",
+    "passwordHint": "En az 8 karakter.",
+    "passwordTooShort": "Şifre en az 8 karakter olmalı.",
+    "loginButton": "Giriş yap",
+    "registerButton": "Hesap oluştur",
+    "noAccount": "Hesabın yok mu?",
+    "registerLink": "Kayıt ol",
+    "haveAccount": "Zaten hesabın var mı?",
+    "loginLink": "Giriş yap",
+    "withGithub": "GitHub ile devam et",
+    "withGoogle": "Google ile devam et",
+    "or": "veya",
+    "oauthFailed": "Bu sağlayıcıyla giriş yapılamadı. Lütfen tekrar dene.",
+    "registrationClosedHint": "Hesap için bu sunucunun yöneticisine başvur.",
+    "terms": "Kayıt olarak güzel oynamayı kabul etmiş olursun. 🎈"
+  },
+  "dashboard": {
+    "greeting": "Selam {{name}} 👋",
+    "subtitle": "Quizlerin patlamaya hazır.",
+    "newQuiz": "Yeni quiz",
+    "generateAi": "Yapay zekâyla üret",
+    "searchPlaceholder": "Quizlerinde ara…",
+    "emptyTitle": "Henüz quizin yok",
+    "emptyText": "İlk quizini sıfırdan oluştur ya da yapay zekâ saniyeler içinde bir taslak hazırlasın.",
+    "noResults": "Aramana uyan quiz yok",
+    "noResultsHint": "Başka bir kelime dene.",
+    "more": "Diğer işlemler",
+    "exportJson": "JSON olarak indir",
+    "exportCsv": "CSV olarak indir",
+    "duplicated": "Quiz kopyalandı",
+    "deleted": "Quiz silindi",
+    "deleteTitle": "“{{title}}” silinsin mi?",
+    "assign": "Ödev olarak ver"
+  },
+  "import": {
+    "title": "Quiz içe aktar",
+    "description": "Bir Pinpop JSON dosyası ya da CSV olarak kaydedilmiş tablo yükle.",
+    "choose": "Dosya seç ya da buraya bırak",
+    "formats": ".json (Pinpop) veya .csv",
+    "quizTitle": "Quiz başlığı",
+    "unsupported": "Lütfen .json veya .csv dosyası seç.",
+    "csvHelp": "Her satırda bir soru. Sütunlar: type, question, answer1–answer6, correct (cevap numarası, örn. 2 veya 1,3), time, explanation.",
+    "template": "CSV şablonunu indir"
+  },
+  "discover": {
+    "title": "Keşfet",
+    "subtitle": "Topluluğun hazırladığı herkese açık quizler. Oyna ya da kendine kopyala.",
+    "searchPlaceholder": "Quiz ara…",
+    "language": "Dil",
+    "allLanguages": "Tüm diller",
+    "sort": "Sırala",
+    "popular": "En çok oynanan",
+    "recent": "En yeni",
+    "emptyTitle": "Bir şey bulunamadı",
+    "emptyText": "Başka bir arama dene ya da kendi quizini herkese açık yayınla."
+  },
+  "detail": {
+    "updated": "{{date}} tarihinde güncellendi",
+    "copyToMine": "Quizlerime kopyala",
+    "copied": "Quizlerine kopyalandı",
+    "questions": "Sorular",
+    "showAnswers": "Cevapları göster",
+    "hideAnswers": "Cevapları gizle",
+    "noQuestions": "Bu quizde henüz soru yok",
+    "notFound": "Quiz bulunamadı",
+    "notFoundText": "Gizli olabilir ya da silinmiş olabilir."
+  },
+  "reports": {
+    "title": "Raporlar",
+    "subtitle": "Başlattığın her oyunun sonuçları.",
+    "quiz": "Quiz",
+    "date": "Tarih",
+    "players": "Oyuncular",
+    "questions": "Sorular",
+    "accuracy": "Başarı",
+    "open": "Raporu aç",
+    "emptyTitle": "Henüz oyun yok",
+    "emptyText": "Canlı bir oyun başlat, sonuçlar burada görünsün.",
+    "deleted": "Rapor silindi",
+    "deleteTitle": "Bu rapor silinsin mi?",
+    "liveTab": "Canlı oyunlar",
+    "homeworkTab": "Ödevler"
+  },
+  "reportDetail": {
+    "subtitle": "{{date}} tarihinde oynandı · PIN {{pin}}",
+    "downloadCsv": "CSV indir",
+    "duration": "Süre",
+    "leaderboard": "Final sıralaması",
+    "perQuestion": "Soru bazında analiz",
+    "player": "Oyuncu",
+    "score": "Puan",
+    "correct": "Doğru",
+    "hardest": "En zor",
+    "answered": "{{count}}/{{total}} cevapladı",
+    "avgTime": "ort. {{seconds}} sn",
+    "noPlayers": "Bu oyunda oyuncu yok",
+    "notFound": "Rapor bulunamadı"
+  },
+  "settings": {
+    "title": "Ayarlar",
+    "subtitle": "Profilini, yapay zekâ sağlayıcılarını ve entegrasyonları yönet.",
+    "saved": "Kaydedildi",
+    "tabs": {
+      "profile": "Profil",
+      "security": "Güvenlik",
+      "ai": "Yapay zekâ",
+      "api": "API ve MCP",
+      "data": "Verilerin"
+    },
+    "profile": {
+      "title": "Profil",
+      "email": "E-posta",
+      "emailHint": "E-posta adresin buradan değiştirilemez.",
+      "appearance": "Görünüm",
+      "darkMode": "Koyu tema",
+      "darkModeHint": "Karanlık odada gözü yormaz."
+    },
+    "security": {
+      "passwordTitle": "Şifre",
+      "passwordHint": "GitHub veya Google ile kayıt olduysan, şifre belirlemek için mevcut şifre alanını boş bırak.",
+      "current": "Mevcut şifre",
+      "new": "Yeni şifre",
+      "confirm": "Yeni şifre (tekrar)",
+      "change": "Şifreyi değiştir",
+      "changed": "Şifre değiştirildi",
+      "mismatch": "Şifreler eşleşmiyor.",
+      "sessionsTitle": "Oturumlar",
+      "sessionsHint": "Ortak bir bilgisayarda mı giriş yaptın? Tüm cihazlardan tek seferde çıkış yap.",
+      "revokeAll": "Her yerden çıkış yap",
+      "revokeConfirm": "Bu cihaz dahil tüm cihazlardan çıkış yapılacak."
+    },
+    "ai": {
+      "enabled": "Yapay zekâ hazır",
+      "disabled": "Yapay zekâ kurulmamış",
+      "usingOwn": "Kişisel sağlayıcın kullanılıyor.",
+      "usingInstance": "Bu sunucuda tanımlı yapay zekâ sağlayıcısı kullanılıyor.",
+      "disabledHint": "Yapay zekâyla quiz üretmek için aşağıya kendi API anahtarını ekle.",
+      "defaultModel": "varsayılan model",
+      "usage": "Bugün {{used}}/{{limit}}",
+      "ownTitle": "Kendi yapay zekâ sağlayıcın",
+      "ownHint": "Kendi anahtarını kullan. Sunucuda şifrelenir ve yalnızca senin isteklerin için kullanılır. Sunucunun yapay zekâsını kullanmak için boş bırak.",
+      "provider": "Sağlayıcı",
+      "model": "Model",
+      "modelHint": "Sağlayıcının varsayılanı için boş bırak.",
+      "apiKey": "API anahtarı",
+      "keyHint": "Sağlayıcının API anahtarını yapıştır.",
+      "keepKey": "Kayıtlı bir anahtar var. Korumak için boş bırak.",
+      "baseUrl": "Temel URL",
+      "remove": "Sağlayıcımı kaldır",
+      "removed": "Kişisel yapay zekâ sağlayıcısı kaldırıldı"
+    },
+    "api": {
+      "tokensTitle": "API anahtarları",
+      "tokensHint": "Anahtarlar; Claude, Cursor gibi araçların veya betiklerinin senin adına işlem yapmasını sağlar. Şifre gibi sakla.",
+      "tokenName": "Anahtar adı",
+      "namePlaceholder": "örn. Claude Desktop",
+      "copyNow": "Bu anahtarı şimdi kopyala — bir daha göremeyeceksin.",
+      "done": "Kaydettim",
+      "noTokens": "Henüz anahtar yok.",
+      "created": "{{date}} oluşturuldu",
+      "lastUsed": "son kullanım {{date}}",
+      "neverUsed": "hiç kullanılmadı",
+      "deleteTitle": "“{{name}}” anahtarı silinsin mi?",
+      "deleteText": "Bu anahtarı kullanan uygulamalar hemen çalışmayı bırakır.",
+      "mcpTitle": "Bir yapay zekâ asistanı bağla",
+      "mcpHint": "Pinpop'ta bir MCP sunucusu var. Bağla ve asistanından quiz oluşturmasını, oyun başlatmasını ve sonuçları okumasını iste.",
+      "remote": "Uzak MCP",
+      "hintClaudeCode": "Bunu terminalinde çalıştır:",
+      "hintClaudeDesktop": "Bunu claude_desktop_config.json dosyasına ekle (Ayarlar → Geliştirici → Yapılandırmayı düzenle). uv gerekir (docs.astral.sh/uv):",
+      "hintCursor": "Bunu ~/.cursor/mcp.json veya projendeki .cursor/mcp.json dosyasına ekle. uv gerekir (docs.astral.sh/uv):",
+      "hintRemote": "HTTP üzerinden uzak MCP destekleyen her istemci için:",
+      "replaceToken": "<YOUR_TOKEN> yerine yukarıda oluşturduğun anahtarı yaz.",
+      "tryIt": "Sonra şunu sormayı dene:",
+      "examplePrompt": "12 yaş için güneş sistemi hakkında 10 soruluk bir quiz hazırla ve bir Pinpop oyunu başlat.",
+      "restTitle": "REST API",
+      "restHint": "Pinpop'taki her şey belgelenmiş bir REST API ile kullanılabilir. Anahtarını Bearer başlığı olarak gönder.",
+      "openDocs": "API dokümanını aç"
+    },
+    "data": {
+      "exportTitle": "Verilerini indir",
+      "exportHint": "Pinpop'un senin hakkında sakladığı her şeyi indir: profil, quizler ve oyun raporları (JSON).",
+      "exportButton": "Verilerimi indir",
+      "deleteTitle": "Hesabı sil",
+      "deleteHint": "Hesabını, quizlerini ve raporlarını kalıcı olarak sil.",
+      "deleteButton": "Hesabımı sil",
+      "deleteConfirm": "Bu işlem hesabını, tüm quizlerini ve raporlarını kalıcı olarak siler. Geri alınamaz.",
+      "typeDelete": "Onaylamak için DELETE yaz",
+      "deleted": "Hesabın silindi"
+    }
+  },
+  "admin": {
+    "title": "Yönetim",
+    "subtitle": "Bu Pinpop sunucusuna göz kulak ol.",
+    "forbidden": "Sadece yöneticiler",
+    "forbiddenText": "Bu sayfayı görmek için yönetici yetkisi gerekir.",
+    "users": "Kullanıcılar",
+    "quizzes": "Quizler",
+    "gamesPlayed": "Oynanan oyunlar",
+    "liveGames": "Canlı oyunlar",
+    "memory": "Bellek",
+    "uptime": "Çalışma süresi",
+    "usersTitle": "Kullanıcılar",
+    "name": "Ad",
+    "email": "E-posta",
+    "joined": "Katılım",
+    "role": "Rol",
+    "you": "sen",
+    "roleUser": "Kullanıcı",
+    "roleAdmin": "Yönetici",
+    "deleteTitle": "{{name}} silinsin mi?",
+    "deleteText": "Kullanıcı, tüm quizleri ve raporlarıyla birlikte silinir."
+  },
+  "notFound": {
+    "title": "Hay aksi, yanlış cevap!",
+    "text": "Bu sayfa yok. Belki de patladı?",
+    "home": "Ana sayfaya dön"
+  },
+  "assign": {
+    "title": "Ödev olarak ver",
+    "subtitle": "Öğrenciler bir bağlantı üzerinden kendi hızlarında tek başına oynar. Hesap gerekmez.",
+    "name": "Başlık",
+    "deadline": "Son tarih (isteğe bağlı)",
+    "deadlineHint": "Bu saatten sonra yeni deneme kabul edilmez.",
+    "shuffleQuestions": "Soru sırasını karıştır",
+    "shuffleAnswers": "Cevap sırasını karıştır",
+    "showAnswers": "Doğru cevapları göster",
+    "showAnswersHint": "Öğrenciler her sorudan sonra çözümü görür.",
+    "create": "Bağlantı oluştur",
+    "readyTitle": "Ödev bağlantısı hazır! 🎉",
+    "readyText": "Bu bağlantıyı veya QR kodu öğrencilerinle paylaş.",
+    "link": "Paylaşım bağlantısı",
+    "code": "Kod: {{code}}",
+    "viewResults": "Sonuçları gör"
+  },
+  "homework": {
+    "emptyTitle": "Henüz ödev yok",
+    "emptyText": "Panelindeki bir quizin ⋯ menüsünü aç ve “Ödev olarak ver”i seç.",
+    "open": "Açık",
+    "closed": "Kapalı",
+    "due": "Son tarih {{date}}",
+    "completed": "tamamladı",
+    "avg": "ort. puan",
+    "copyLink": "Bağlantıyı kopyala",
+    "close": "Kapat",
+    "reopen": "Yeniden aç",
+    "deleteTitle": "Bu ödev silinsin mi?",
+    "deleteText": "Tüm öğrenci sonuçları da silinecek.",
+    "back": "Tüm ödevler",
+    "students": "Öğrenci",
+    "accuracy": "Ort. başarı",
+    "shareLink": "Öğrenci bağlantısı",
+    "noAttempts": "Henüz katılım yok",
+    "noAttemptsText": "Öğrenciler başladıkça sonuçlar burada görünür. Sayfa kendini otomatik yeniler.",
+    "student": "Öğrenci",
+    "score": "Puan",
+    "correct": "Doğru",
+    "answers": "Cevaplar",
+    "inProgress": "devam ediyor",
+    "perQuestion": "Soru bazında"
+  }
+}

@@ -1,0 +1,9 @@
+# Recently published versions that are allowed despite pnpm's minimum release age.
+minimumReleaseAgeExclude:
+  - "@tanstack/query-core@5.108.4"
+  - "@tanstack/react-query@5.108.4"
+  - i18next@27.2.6
+  - lucide-react@1.78.0
+
+allowBuilds:
+  esbuild: true

@@ -1,0 +1,211 @@
+{
+  "untitledQuiz": "Untitled quiz",
+  "notFound": "We couldn't open this quiz",
+  "backToDashboard": "Back to my quizzes",
+  "quizTitle": "Quiz title",
+  "quizTitlePlaceholder": "Give your quiz a name…",
+  "notOwner": "You're editing a quiz you don't own (admin access).",
+  "status": {
+    "saved": "All changes saved",
+    "unsaved": "Unsaved changes",
+    "saving": "Saving…"
+  },
+  "settings": {
+    "button": "Settings",
+    "title": "Quiz settings",
+    "description": "How your quiz is described, shared and found.",
+    "done": "Done",
+    "quizDescription": "Description",
+    "descriptionPlaceholder": "What is this quiz about? Who is it for?",
+    "language": "Quiz language",
+    "languageHint": "Used for search filters and AI-generated questions.",
+    "visibility": "Who can see it?",
+    "tags": "Tags",
+    "tagsHint": "Up to 10 tags. Press Enter or comma to add.",
+    "tagsPlaceholder": "e.g. history, science",
+    "cover": "Cover image"
+  },
+  "toast": {
+    "deleted": "Question deleted",
+    "undo": "Undo",
+    "saved": "Quiz saved"
+  },
+  "validation": {
+    "title": "Give your quiz a title first.",
+    "fixBeforeSave_one": "1 question needs fixing (see question {{n}}).",
+    "fixBeforeSave_other": "{{count}} questions need fixing (first: question {{n}}).",
+    "text": "Write the question.",
+    "correct": "Mark at least one answer as correct.",
+    "minChoices": "Add at least two answers.",
+    "choiceText": "Every answer needs some text.",
+    "items": "Every item needs some text (2–6 items).",
+    "accepted": "Add at least one accepted answer.",
+    "slider": "Check the range: max must be above min and the answer must be inside it."
+  },
+  "empty": {
+    "title": "Let's add some questions",
+    "description": "Pick a question type to start, or let AI write a few for you."
+  },
+  "leave": {
+    "title": "Leave without saving?",
+    "description": "You have unsaved changes in this quiz.",
+    "discard": "Discard changes",
+    "save": "Save and leave"
+  },
+  "list": {
+    "questionN": "Question {{n}}",
+    "drag": "Drag to reorder",
+    "untitled": "Empty question",
+    "hasErrors": "This question has problems",
+    "duplicate": "Duplicate question",
+    "delete": "Delete question",
+    "addQuestion": "Add question"
+  },
+  "question": {
+    "number": "Q{{n}}",
+    "changeType": "Change question type",
+    "text": "Question",
+    "textPlaceholder": "Type your question…",
+    "timeLimit": "Time limit",
+    "points": "Points",
+    "noPointsType": "This question type doesn't award points.",
+    "explanation": "Explanation",
+    "explanationHint": "Shown after the answer is revealed. Great for learning!",
+    "explanationPlaceholder": "Why is this the right answer?"
+  },
+  "answers": {
+    "quiz": "Answers",
+    "multi": "Answers",
+    "truefalse": "The statement is…",
+    "type": "Accepted answers",
+    "slider": "Number range",
+    "order": "Items in the correct order",
+    "poll": "Options",
+    "wordcloud": "Word cloud"
+  },
+  "points": {
+    "none": "No points",
+    "standard": "Standard",
+    "double": "Double points"
+  },
+  "image": {
+    "hint": "Add an image — drag & drop works too",
+    "upload": "Upload image",
+    "fromUrl": "From link",
+    "url": "Image link",
+    "invalidUrl": "Use a link starting with https://",
+    "replace": "Replace",
+    "remove": "Remove image"
+  },
+  "choices": {
+    "placeholder": "Answer {{letter}}",
+    "label": "Answer {{letter}}",
+    "correct": "Correct answer",
+    "markCorrect": "Mark as correct",
+    "markCorrectN": "Mark answer {{letter}} as correct",
+    "remove": "Remove answer {{letter}}",
+    "add": "Add answer",
+    "singleHint": "Tap the circle to pick the one correct answer.",
+    "multiHint": "Tick every correct answer.",
+    "pollHint": "Polls have no right answer — everyone's opinion counts."
+  },
+  "truefalse": {
+    "label": "Correct answer",
+    "hint": "Pick whether the statement is true or false."
+  },
+  "type": {
+    "label": "Accepted answers",
+    "hint": "Capital letters, accents and punctuation are ignored. Add spelling variants.",
+    "placeholder": "Type an answer and press Enter"
+  },
+  "slider": {
+    "min": "Minimum",
+    "max": "Maximum",
+    "step": "Step",
+    "correct": "Correct answer",
+    "tolerance": "Tolerance (±)",
+    "unit": "Unit",
+    "unitPlaceholder": "km, °C, years…",
+    "preview": "Preview",
+    "answerIs": "Answer: {{value}} {{unit}}"
+  },
+  "order": {
+    "hint": "List the items in the correct order. Players will see them shuffled.",
+    "itemN": "Item {{n}}",
+    "placeholder": "Item {{n}}",
+    "up": "Move up",
+    "down": "Move down",
+    "remove": "Remove item",
+    "add": "Add item"
+  },
+  "wordcloud": {
+    "hint": "Players send short answers that appear as a live word cloud. No points.",
+    "maxLength": "Max characters"
+  },
+  "ai": {
+    "improve": "AI assist",
+    "working": "Thinking…",
+    "improved": "Question updated by AI",
+    "disabledHint": "AI isn't set up yet. Add a provider or your own API key to use AI helpers.",
+    "openSettings": "Open AI settings",
+    "actions": {
+      "harder": "Make it harder",
+      "easier": "Make it easier",
+      "distractors": "Better wrong answers",
+      "explain": "Write an explanation",
+      "rephrase": "Rephrase it"
+    }
+  },
+  "aiGen": {
+    "title": "Generate a quiz with AI",
+    "subtitle": "Describe a topic or give some material — we'll write the questions.",
+    "moreTitle": "Generate more questions",
+    "moreSubtitle": "New questions are added to the end of this quiz.",
+    "moreShort": "Generate with AI",
+    "generate": "Generate",
+    "success": "Your quiz is ready! Review it before playing.",
+    "added_one": "Added 1 question",
+    "added_other": "Added {{count}} questions",
+    "tabs": {
+      "topic": "Topic",
+      "text": "Text",
+      "link": "Link",
+      "file": "File"
+    },
+    "topic": "Topic or instructions",
+    "topicHint": "The more specific, the better.",
+    "topicPlaceholder": "e.g. The solar system for 5th graders, focus on planets",
+    "idea1": "World capitals",
+    "idea2": "Photosynthesis basics",
+    "idea3": "90s pop music trivia",
+    "idea4": "JavaScript fundamentals",
+    "focus": "Focus (optional)",
+    "focusHint": "Tell the AI what to focus on in the material.",
+    "focusPlaceholder": "e.g. Key dates and people",
+    "text": "Source text",
+    "textHint": "Paste lesson notes, an article or a summary.",
+    "textPlaceholder": "Paste your material here…",
+    "link": "Web page",
+    "linkHint": "Public articles work best (Wikipedia, blogs, docs).",
+    "file": "Document",
+    "fileHint": "PDF, TXT or Markdown.",
+    "fileDrop": "Click or drop a file here",
+    "count": "Questions",
+    "difficulty": "Difficulty",
+    "language": "Language",
+    "timeLimit": "Time per question",
+    "types": "Question types",
+    "audience": "Audience (optional)",
+    "audienceHint": "Helps the AI choose the right tone and level.",
+    "audiencePlaceholder": "e.g. High school students, office team, family night",
+    "working": "Writing questions…",
+    "loading1": "Reading up on the topic…",
+    "loading2": "Thinking of tricky wrong answers…",
+    "loading3": "Double-checking the facts…",
+    "loading4": "Adding a pinch of fun…",
+    "loading5": "Almost there, polishing the questions…",
+    "disabledTitle": "AI isn't set up yet",
+    "disabledText": "This server has no AI provider. Add your own API key (Claude, OpenAI, OpenRouter or a local Ollama) in settings to generate questions.",
+    "openSettings": "Set up AI"
+  }
+}

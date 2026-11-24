@@ -1,0 +1,36 @@
+name: 🐞 Bug report
+description: Something isn't working
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Also tell us what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. Create a quiz…\n2. Start a game…"
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Pinpop version / commit
+  - type: dropdown
+    id: deploy
+    attributes:
+      label: How do you run Pinpop?
+      options: [Docker Compose, Single Docker container, From source, Hosted instance, Other]
+  - type: input
+    id: browser
+    attributes:
+      label: Browser / device
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs
+      render: shell

@@ -1,0 +1,156 @@
+@import "tailwindcss";
+@import "@fontsource-variable/bricolage-grotesque";
+@import "@fontsource-variable/inter";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/*
+ * Pinpop design tokens.
+ * Surfaces and text switch with the theme; brand and answer colours stay constant so the
+ * big screen and phones always agree on which colour means which answer.
+ */
+@theme {
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Bricolage Grotesque Variable", "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+
+  --color-pop-50: #fff1f4;
+  --color-pop-100: #ffe1e8;
+  --color-pop-200: #ffc2d1;
+  --color-pop-300: #ff94ad;
+  --color-pop-400: #ff5f86;
+  --color-pop-500: #ff3d68;
+  --color-pop-600: #ec1a4f;
+  --color-pop-700: #c70f40;
+  --color-pop-800: #a5103b;
+  --color-pop-900: #8c1238;
+
+  --color-sun-400: #ffcf4a;
+  --color-sun-500: #ffb81c;
+  --color-tang-500: #ff8a3d;
+
+  --color-ink-950: #0e0d14;
+  --color-ink-900: #14121f;
+  --color-ink-800: #1f1c2e;
+  --color-ink-700: #2c2840;
+  --color-ink-600: #3d3856;
+
+  --color-cream: #fff8f1;
+
+  /* Answer palette (A–F) */
+  --color-ans-a: #ff5a4e;
+  --color-ans-b: #1f9bff;
+  --color-ans-c: #ffb81c;
+  --color-ans-d: #12b886;
+  --color-ans-e: #b14dff;
+  --color-ans-f: #ff7ac6;
+
+  /* Semantic surfaces (light) */
+  --color-bg: #fff8f1;
+  --color-surface: #ffffff;
+  --color-surface-2: #fff1e6;
+  --color-border: #f0e2d6;
+  --color-fg: #14121f;
+  --color-muted: #6d6680;
+
+  --radius-xl: 1rem;
+  --radius-2xl: 1.25rem;
+  --radius-3xl: 1.75rem;
+
+  --shadow-pop: 0 4px 0 0 rgb(20 18 31 / 0.9);
+  --shadow-pop-sm: 0 3px 0 0 rgb(20 18 31 / 0.9);
+  --shadow-soft: 0 10px 30px -12px rgb(20 18 31 / 0.18);
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-wiggle: wiggle 0.5s ease-in-out;
+  --animate-pop-in: pop-in 0.35s cubic-bezier(0.2, 1.4, 0.4, 1) both;
+}
+
+.dark {
+  --color-bg: #0e0d14;
+  --color-surface: #17151f;
+  --color-surface-2: #1f1c2b;
+  --color-border: #2d293d;
+  --color-fg: #f6f2ff;
+  --color-muted: #a59fb8;
+  --shadow-pop: 0 4px 0 0 rgb(0 0 0 / 0.65);
+  --shadow-pop-sm: 0 3px 0 0 rgb(0 0 0 / 0.65);
+  --shadow-soft: 0 10px 30px -12px rgb(0 0 0 / 0.6);
+  color-scheme: dark;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-14px) rotate(3deg);
+  }
+}
+
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(-6deg);
+  }
+  75% {
+    transform: rotate(6deg);
+  }
+}
+
+@keyframes pop-in {
+  from {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    @apply bg-bg text-fg font-sans antialiased;
+    min-height: 100dvh;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display tracking-tight;
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-pop-500;
+  }
+  ::selection {
+    @apply bg-pop-200 text-ink-900;
+  }
+}
+
+@layer components {
+  /* Dotted backdrop used on game screens */
+  .bg-dots {
+    background-image: radial-gradient(currentColor 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,211 @@
+{
+  "untitledQuiz": "Adsız quiz",
+  "notFound": "Bu quiz açılamadı",
+  "backToDashboard": "Quizlerime dön",
+  "quizTitle": "Quiz başlığı",
+  "quizTitlePlaceholder": "Quizine bir isim ver…",
+  "notOwner": "Sana ait olmayan bir quizi düzenliyorsun (yönetici erişimi).",
+  "status": {
+    "saved": "Tüm değişiklikler kaydedildi",
+    "unsaved": "Kaydedilmemiş değişiklikler",
+    "saving": "Kaydediliyor…"
+  },
+  "settings": {
+    "button": "Ayarlar",
+    "title": "Quiz ayarları",
+    "description": "Quizinin nasıl tanıtılacağı, paylaşılacağı ve bulunacağı.",
+    "done": "Tamam",
+    "quizDescription": "Açıklama",
+    "descriptionPlaceholder": "Bu quiz ne hakkında? Kimler için?",
+    "language": "Quiz dili",
+    "languageHint": "Arama filtrelerinde ve AI ile üretilen sorularda kullanılır.",
+    "visibility": "Kimler görebilir?",
+    "tags": "Etiketler",
+    "tagsHint": "En fazla 10 etiket. Eklemek için Enter'a ya da virgüle bas.",
+    "tagsPlaceholder": "örn. tarih, fen",
+    "cover": "Kapak görseli"
+  },
+  "toast": {
+    "deleted": "Soru silindi",
+    "undo": "Geri al",
+    "saved": "Quiz kaydedildi"
+  },
+  "validation": {
+    "title": "Önce quizine bir başlık ver.",
+    "fixBeforeSave_one": "1 sorunun düzeltilmesi gerekiyor ({{n}}. soruya bak).",
+    "fixBeforeSave_other": "{{count}} sorunun düzeltilmesi gerekiyor (ilki: {{n}}. soru).",
+    "text": "Soruyu yaz.",
+    "correct": "En az bir cevabı doğru olarak işaretle.",
+    "minChoices": "En az iki cevap ekle.",
+    "choiceText": "Her cevabın bir metni olmalı.",
+    "items": "Her öğenin bir metni olmalı (2–6 öğe).",
+    "accepted": "En az bir kabul edilen cevap ekle.",
+    "slider": "Aralığı kontrol et: en büyük değer en küçükten büyük olmalı ve cevap aralığın içinde olmalı."
+  },
+  "empty": {
+    "title": "Hadi birkaç soru ekleyelim",
+    "description": "Başlamak için bir soru tipi seç ya da birkaç soruyu AI yazsın."
+  },
+  "leave": {
+    "title": "Kaydetmeden çıkılsın mı?",
+    "description": "Bu quizde kaydedilmemiş değişiklikler var.",
+    "discard": "Değişiklikleri at",
+    "save": "Kaydet ve çık"
+  },
+  "list": {
+    "questionN": "{{n}}. soru",
+    "drag": "Sıralamak için sürükle",
+    "untitled": "Boş soru",
+    "hasErrors": "Bu soruda sorunlar var",
+    "duplicate": "Soruyu kopyala",
+    "delete": "Soruyu sil",
+    "addQuestion": "Soru ekle"
+  },
+  "question": {
+    "number": "S{{n}}",
+    "changeType": "Soru tipini değiştir",
+    "text": "Soru",
+    "textPlaceholder": "Sorunu yaz…",
+    "timeLimit": "Süre",
+    "points": "Puan",
+    "noPointsType": "Bu soru tipi puan vermez.",
+    "explanation": "Açıklama",
+    "explanationHint": "Cevap açıklandıktan sonra gösterilir. Öğrenmek için harika!",
+    "explanationPlaceholder": "Doğru cevap neden bu?"
+  },
+  "answers": {
+    "quiz": "Cevaplar",
+    "multi": "Cevaplar",
+    "truefalse": "Bu ifade…",
+    "type": "Kabul edilen cevaplar",
+    "slider": "Sayı aralığı",
+    "order": "Doğru sırayla öğeler",
+    "poll": "Seçenekler",
+    "wordcloud": "Kelime bulutu"
+  },
+  "points": {
+    "none": "Puansız",
+    "standard": "Standart",
+    "double": "Çift puan"
+  },
+  "image": {
+    "hint": "Bir görsel ekle — sürükle bırak da olur",
+    "upload": "Görsel yükle",
+    "fromUrl": "Bağlantıdan",
+    "url": "Görsel bağlantısı",
+    "invalidUrl": "https:// ile başlayan bir bağlantı kullan",
+    "replace": "Değiştir",
+    "remove": "Görseli kaldır"
+  },
+  "choices": {
+    "placeholder": "{{letter}} cevabı",
+    "label": "{{letter}} cevabı",
+    "correct": "Doğru cevap",
+    "markCorrect": "Doğru olarak işaretle",
+    "markCorrectN": "{{letter}} cevabını doğru olarak işaretle",
+    "remove": "{{letter}} cevabını kaldır",
+    "add": "Cevap ekle",
+    "singleHint": "Tek doğru cevabı seçmek için daireye dokun.",
+    "multiHint": "Doğru olan tüm cevapları işaretle.",
+    "pollHint": "Anketlerde doğru cevap yok — herkesin fikri önemli."
+  },
+  "truefalse": {
+    "label": "Doğru cevap",
+    "hint": "İfadenin doğru mu yanlış mı olduğunu seç."
+  },
+  "type": {
+    "label": "Kabul edilen cevaplar",
+    "hint": "Büyük/küçük harf, aksanlar ve noktalama dikkate alınmaz. Farklı yazımları da ekle.",
+    "placeholder": "Bir cevap yaz ve Enter'a bas"
+  },
+  "slider": {
+    "min": "En küçük",
+    "max": "En büyük",
+    "step": "Adım",
+    "correct": "Doğru cevap",
+    "tolerance": "Tolerans (±)",
+    "unit": "Birim",
+    "unitPlaceholder": "km, °C, yıl…",
+    "preview": "Önizleme",
+    "answerIs": "Cevap: {{value}} {{unit}}"
+  },
+  "order": {
+    "hint": "Öğeleri doğru sırayla yaz. Oyuncular karışık sırada görecek.",
+    "itemN": "{{n}}. öğe",
+    "placeholder": "{{n}}. öğe",
+    "up": "Yukarı taşı",
+    "down": "Aşağı taşı",
+    "remove": "Öğeyi kaldır",
+    "add": "Öğe ekle"
+  },
+  "wordcloud": {
+    "hint": "Oyuncuların kısa cevapları canlı bir kelime bulutunda görünür. Puan yok.",
+    "maxLength": "En fazla karakter"
+  },
+  "ai": {
+    "improve": "AI yardımı",
+    "working": "Düşünüyor…",
+    "improved": "Soru AI tarafından güncellendi",
+    "disabledHint": "AI henüz kurulmadı. AI yardımcılarını kullanmak için bir sağlayıcı ya da kendi API anahtarını ekle.",
+    "openSettings": "AI ayarlarını aç",
+    "actions": {
+      "harder": "Zorlaştır",
+      "easier": "Kolaylaştır",
+      "distractors": "Daha iyi yanlış cevaplar",
+      "explain": "Açıklama yaz",
+      "rephrase": "Yeniden ifade et"
+    }
+  },
+  "aiGen": {
+    "title": "AI ile quiz oluştur",
+    "subtitle": "Bir konu anlat ya da bir kaynak ver — soruları biz yazalım.",
+    "moreTitle": "Daha fazla soru üret",
+    "moreSubtitle": "Yeni sorular bu quizin sonuna eklenir.",
+    "moreShort": "AI ile üret",
+    "generate": "Üret",
+    "success": "Quizin hazır! Oynamadan önce bir göz at.",
+    "added_one": "1 soru eklendi",
+    "added_other": "{{count}} soru eklendi",
+    "tabs": {
+      "topic": "Konu",
+      "text": "Metin",
+      "link": "Bağlantı",
+      "file": "Dosya"
+    },
+    "topic": "Konu ya da talimatlar",
+    "topicHint": "Ne kadar ayrıntılı olursa o kadar iyi.",
+    "topicPlaceholder": "örn. 5. sınıflar için Güneş Sistemi, gezegenlere odaklan",
+    "idea1": "Dünya başkentleri",
+    "idea2": "Fotosentezin temelleri",
+    "idea3": "90'lar pop müziği",
+    "idea4": "JavaScript temelleri",
+    "focus": "Odak (isteğe bağlı)",
+    "focusHint": "AI'a kaynakta neye odaklanması gerektiğini söyle.",
+    "focusPlaceholder": "örn. Önemli tarihler ve kişiler",
+    "text": "Kaynak metin",
+    "textHint": "Ders notlarını, bir makaleyi ya da bir özeti yapıştır.",
+    "textPlaceholder": "Kaynağını buraya yapıştır…",
+    "link": "Web sayfası",
+    "linkHint": "Herkese açık makaleler en iyi sonucu verir (Vikipedi, bloglar, dokümanlar).",
+    "file": "Belge",
+    "fileHint": "PDF, TXT veya Markdown.",
+    "fileDrop": "Tıkla ya da dosyayı buraya bırak",
+    "count": "Soru sayısı",
+    "difficulty": "Zorluk",
+    "language": "Dil",
+    "timeLimit": "Soru başına süre",
+    "types": "Soru tipleri",
+    "audience": "Hedef kitle (isteğe bağlı)",
+    "audienceHint": "AI'ın doğru üslubu ve seviyeyi seçmesine yardım eder.",
+    "audiencePlaceholder": "örn. Lise öğrencileri, ofis ekibi, aile gecesi",
+    "working": "Sorular yazılıyor…",
+    "loading1": "Konuyu araştırıyor…",
+    "loading2": "Kafa karıştırıcı yanlış cevaplar düşünüyor…",
+    "loading3": "Bilgileri iki kez kontrol ediyor…",
+    "loading4": "Biraz eğlence katıyor…",
+    "loading5": "Az kaldı, sorular parlatılıyor…",
+    "disabledTitle": "AI henüz kurulmadı",
+    "disabledText": "Bu sunucuda bir AI sağlayıcı yok. Soru üretmek için ayarlardan kendi API anahtarını (Claude, OpenAI, OpenRouter ya da yerel Ollama) ekle.",
+    "openSettings": "AI'ı kur"
+  }
+}
