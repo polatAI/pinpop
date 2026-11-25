@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1.7
 
 # ---------------------------------------------------------------- web app
-FROM node:24-alpine AS web
+FROM node:26-alpine AS web
 WORKDIR /web
 RUN npm install -g pnpm@12.23.0
 COPY frontend/package.json frontend/pnpm-lock.yaml ./
