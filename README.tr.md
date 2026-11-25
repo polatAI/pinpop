@@ -8,8 +8,13 @@
 
 Tek komutla kendi sunucunda çalıştır, ya da MCP üzerinden Claude, Cursor ve diğer AI araçlarıyla kullan.
 
+### [▶ pinpop.cloud adresinde ücretsiz dene](https://pinpop.cloud)
+
+Kurulum yok, oyuncular için uygulama da yok. Hesap aç ve ilk oyununu başlat.
+
 [Özellikler](#özellikler) · [Ekran görüntüleri](#ekran-görüntüleri) · [Hızlı başlangıç](#hızlı-başlangıç) · [AI](#ai-ile-soru-üretme) · [MCP](#mcp) · [English](README.md)
 
+[![Canlı](https://img.shields.io/badge/canl%C4%B1-pinpop.cloud-ff3d68)](https://pinpop.cloud)
 [![CI](https://github.com/polatAI/pinpop/actions/workflows/ci.yml/badge.svg)](https://github.com/polatAI/pinpop/actions/workflows/ci.yml)
 [![License: AGPL-3.0](https://img.shields.io/badge/license-AGPL--3.0-ff3d68)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.13-3776ab)](https://www.python.org)
@@ -82,6 +87,8 @@ Tek komutla kendi sunucunda çalıştır, ya da MCP üzerinden Claude, Cursor ve
 </table>
 
 ## Hızlı başlangıç
+
+En hızlı yol **[pinpop.cloud](https://pinpop.cloud)** adresindeki barındırılan sürüm: ücretsiz, kurulum gerektirmez. Kendi sunucunda çalıştırmak için:
 
 ```bash
 git clone https://github.com/polatAI/pinpop.git && cd pinpop

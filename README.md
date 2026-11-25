@@ -8,8 +8,13 @@
 
 Self-host it with one command, or use it with Claude, Cursor and other AI tools through MCP.
 
+### [▶ Try it free at pinpop.cloud](https://pinpop.cloud)
+
+No installation and no app for players. Just create an account and host your first game.
+
 [Features](#features) · [Screenshots](#screenshots) · [Quick start](#quick-start) · [AI](#ai-question-generation) · [MCP](#mcp-use-pinpop-from-claude-cursor) · [Docs](docs/) · [Türkçe](README.tr.md)
 
+[![Live](https://img.shields.io/badge/live-pinpop.cloud-ff3d68)](https://pinpop.cloud)
 [![CI](https://github.com/polatAI/pinpop/actions/workflows/ci.yml/badge.svg)](https://github.com/polatAI/pinpop/actions/workflows/ci.yml)
 [![License: AGPL-3.0](https://img.shields.io/badge/license-AGPL--3.0-ff3d68)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.13-3776ab)](https://www.python.org)
@@ -91,6 +96,8 @@ Self-host it with one command, or use it with Claude, Cursor and other AI tools 
 </table>
 
 ## Quick start
+
+The quickest way is the hosted version at **[pinpop.cloud](https://pinpop.cloud)**: free, nothing to install. To run your own instance:
 
 ### Docker (recommended)
 
