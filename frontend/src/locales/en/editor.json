@@ -43,8 +43,8 @@
     "slider": "Check the range: max must be above min and the answer must be inside it."
   },
   "empty": {
-    "title": "Let's add some questions",
-    "description": "Pick a question type to start, or let AI write a few for you."
+    "title": "No questions yet",
+    "description": "Choose a question type to get started."
   },
   "leave": {
     "title": "Leave without saving?",
@@ -70,7 +70,7 @@
     "points": "Points",
     "noPointsType": "This question type doesn't award points.",
     "explanation": "Explanation",
-    "explanationHint": "Shown after the answer is revealed. Great for learning!",
+    "explanationHint": "Shown to players after the correct answer is revealed.",
     "explanationPlaceholder": "Why is this the right answer?"
   },
   "answers": {
@@ -89,7 +89,7 @@
     "double": "Double points"
   },
   "image": {
-    "hint": "Add an image — drag & drop works too",
+    "hint": "Add an image or drag it here",
     "upload": "Upload image",
     "fromUrl": "From link",
     "url": "Image link",
@@ -107,7 +107,7 @@
     "add": "Add answer",
     "singleHint": "Tap the circle to pick the one correct answer.",
     "multiHint": "Tick every correct answer.",
-    "pollHint": "Polls have no right answer — everyone's opinion counts."
+    "pollHint": "Polls have no correct answer."
   },
   "truefalse": {
     "label": "Correct answer",
@@ -144,7 +144,7 @@
   },
   "ai": {
     "improve": "AI assist",
-    "working": "Thinking…",
+    "working": "Working…",
     "improved": "Question updated by AI",
     "disabledHint": "AI isn't set up yet. Add a provider or your own API key to use AI helpers.",
     "openSettings": "Open AI settings",
@@ -158,12 +158,12 @@
   },
   "aiGen": {
     "title": "Generate a quiz with AI",
-    "subtitle": "Describe a topic or give some material — we'll write the questions.",
+    "subtitle": "Describe a topic or add a source and the questions are drafted for you.",
     "moreTitle": "Generate more questions",
     "moreSubtitle": "New questions are added to the end of this quiz.",
     "moreShort": "Generate with AI",
     "generate": "Generate",
-    "success": "Your quiz is ready! Review it before playing.",
+    "success": "Quiz created. Review the questions before you start.",
     "added_one": "Added 1 question",
     "added_other": "Added {{count}} questions",
     "tabs": {
@@ -199,13 +199,13 @@
     "audienceHint": "Helps the AI choose the right tone and level.",
     "audiencePlaceholder": "e.g. High school students, office team, family night",
     "working": "Writing questions…",
-    "loading1": "Reading up on the topic…",
-    "loading2": "Thinking of tricky wrong answers…",
-    "loading3": "Double-checking the facts…",
-    "loading4": "Adding a pinch of fun…",
-    "loading5": "Almost there, polishing the questions…",
+    "loading1": "Reviewing the topic…",
+    "loading2": "Writing answer options…",
+    "loading3": "Checking the facts…",
+    "loading4": "Editing the questions…",
+    "loading5": "Final checks…",
     "disabledTitle": "AI isn't set up yet",
-    "disabledText": "This server has no AI provider. Add your own API key (Claude, OpenAI, OpenRouter or a local Ollama) in settings to generate questions.",
+    "disabledText": "No AI provider is configured on this site. Add your own API key (Claude, OpenAI, OpenRouter or local Ollama) in settings to generate questions.",
     "openSettings": "Set up AI"
   }
 }

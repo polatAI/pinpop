@@ -1,16 +1,16 @@
 {
   "landing": {
     "badge": "Open source · AI-powered · Self-hostable",
-    "titleA": "Live quizzes that",
-    "titleB": "pop.",
-    "subtitle": "{{name}} turns any classroom, meetup or party into a game show. Write questions or let AI do it, share a PIN, and play together in real time.",
+    "titleA": "Live quizzes for",
+    "titleB": "every classroom.",
+    "subtitle": "With {{name}} you write the questions or let AI draft them, share a game PIN and play with everyone in real time. Made for lessons, trainings and events.",
     "pinLabel": "Game PIN",
     "pinPlaceholder": "Enter game PIN",
     "joinButton": "Join",
     "createCta": "Create a quiz",
     "githubCta": "Star on GitHub",
     "joinCta": "Join a game",
-    "howTitle": "Three steps to a great game",
+    "howTitle": "A live game in three steps",
     "steps": {
       "create": {
         "title": "Create",
@@ -19,14 +19,14 @@
       },
       "host": {
         "title": "Host",
-        "text": "Put the host screen on a projector. Players join from any phone with a PIN or QR code, no app needed."
+        "text": "Put the game screen on a projector. Players join from their phones with a PIN or QR code; no app to install."
       },
       "play": {
         "title": "Play",
-        "text": "Answer fast, build streaks, climb the leaderboard. Get a detailed report when the confetti settles."
+        "text": "Players answer on their phones and the leaderboard updates after every question. A detailed report is ready when the game ends."
       }
     },
-    "featuresTitle": "Everything you need, nothing you don't",
+    "featuresTitle": "Everything you need",
     "featuresSubtitle": "Built in the open by the community. Use it for free on this site or run it on your own server.",
     "features": {
       "types": {
@@ -39,11 +39,11 @@
       },
       "mcp": {
         "title": "MCP built in",
-        "text": "Ask Claude or Cursor to write a quiz and start a game. Pinpop speaks the Model Context Protocol."
+        "text": "Let assistants such as Claude or Cursor write a quiz and start a game. Pinpop supports the Model Context Protocol (MCP)."
       },
       "selfhost": {
         "title": "One-command self-host",
-        "text": "docker compose up and you're live. Runs even without a database server."
+        "text": "Goes live with a single Docker command. No separate database server required."
       },
       "realtime": {
         "title": "Real-time at scale",
@@ -55,19 +55,19 @@
       },
       "opensource": {
         "title": "Open source",
-        "text": "AGPL-3.0 licensed. Read the code, fork it, improve it together."
+        "text": "AGPL-3.0 licensed. The source code is open for anyone to read and improve."
       },
       "privacy": {
-        "title": "Privacy first",
+        "title": "Privacy-friendly",
         "text": "No ads, no trackers. Players don't need accounts. Export or delete your data anytime."
       },
       "i18n": {
         "title": "Multilingual",
-        "text": "English and Turkish out of the box, with more languages from the community."
+        "text": "Turkish and English included; more languages come from the community."
       },
       "dark": {
         "title": "Light & dark",
-        "text": "Looks great on a projector, a laptop or a phone in a dark room."
+        "text": "Easy to read on projectors, laptops and phones."
       },
       "homework": {
         "title": "Homework mode",
@@ -75,22 +75,22 @@
       }
     },
     "selfHostTitle": "Your server, your data",
-    "selfHostText": "Pinpop ships as a single Docker image. Bring PostgreSQL, or let it use its built-in embedded database.",
+    "selfHostText": "Pinpop ships as a single Docker image. It runs with PostgreSQL or with a built-in database that needs no setup.",
     "selfHostPoints": {
-      "one": "Free forever — every feature, no limits",
+      "one": "Free and unlimited, with every feature included",
       "two": "Bring your own AI key or run a local model",
       "three": "REST API, OpenAPI docs and webhooks-friendly design"
     },
-    "selfHostNote": "Then open http://localhost:3000 — the first account becomes the admin.",
-    "finalTitle": "Ready to make your next session unforgettable?",
+    "selfHostNote": "Then open http://localhost:3000. The first account becomes the admin.",
+    "finalTitle": "Create your first quiz in a few minutes.",
     "badgeNoAi": "Open source · Free · Self-hostable",
-    "subtitleNoAi": "{{name}} turns any classroom, meetup or party into a game show. Write your questions, share a PIN, and play together in real time."
+    "subtitleNoAi": "With {{name}} you write the questions, share a game PIN and play with everyone in real time. Made for lessons, trainings and events."
   },
   "auth": {
     "loginTitle": "Welcome back",
     "loginSubtitle": "Log in to create and host quizzes.",
     "registerTitle": "Create your account",
-    "registerSubtitle": "Free forever. Players never need an account.",
+    "registerSubtitle": "Free. Players don't need an account.",
     "email": "Email",
     "password": "Password",
     "name": "Name",
@@ -106,17 +106,17 @@
     "withGoogle": "Continue with Google",
     "or": "or",
     "oauthFailed": "Signing in with that provider failed. Please try again.",
-    "registrationClosedHint": "Ask the administrator of this server for an account.",
-    "terms": "By signing up you agree to play nice. 🎈"
+    "registrationClosedHint": "Contact the site administrator for an account.",
+    "terms": "By signing up you agree to use the platform respectfully and for its intended purpose."
   },
   "dashboard": {
-    "greeting": "Hi {{name}} 👋",
-    "subtitle": "Your quizzes, ready to pop.",
+    "greeting": "Hello, {{name}}",
+    "subtitle": "Manage your quizzes and start live games from here.",
     "newQuiz": "New quiz",
     "generateAi": "Generate with AI",
     "searchPlaceholder": "Search your quizzes…",
     "emptyTitle": "No quizzes yet",
-    "emptyText": "Create your first quiz from scratch or let AI draft one for you in seconds.",
+    "emptyText": "Start by creating a quiz from scratch or importing a file.",
     "noResults": "No quizzes match your search",
     "noResultsHint": "Try a different word.",
     "more": "More actions",
@@ -193,7 +193,7 @@
   },
   "settings": {
     "title": "Settings",
-    "subtitle": "Manage your profile, AI providers and integrations.",
+    "subtitle": "Manage your profile, security and integrations.",
     "saved": "Saved",
     "tabs": {
       "profile": "Profile",
@@ -208,7 +208,7 @@
       "emailHint": "Your email can't be changed here.",
       "appearance": "Appearance",
       "darkMode": "Dark mode",
-      "darkModeHint": "Easier on the eyes in a dark room."
+      "darkModeHint": "Easier on the eyes in low light."
     },
     "security": {
       "passwordTitle": "Password",
@@ -228,7 +228,7 @@
       "enabled": "AI is ready",
       "disabled": "AI is not set up",
       "usingOwn": "Using your personal provider.",
-      "usingInstance": "Using the AI provider configured on this server.",
+      "usingInstance": "Using the AI provider configured on this site.",
       "disabledHint": "Add your own API key below to generate quizzes with AI.",
       "defaultModel": "default model",
       "usage": "{{used}}/{{limit}} today",
@@ -285,7 +285,7 @@
   },
   "admin": {
     "title": "Admin",
-    "subtitle": "Keep an eye on this Pinpop server.",
+    "subtitle": "Platform statistics and user management.",
     "forbidden": "Admins only",
     "forbiddenText": "You need admin rights to view this page.",
     "users": "Users",
@@ -306,8 +306,8 @@
     "deleteText": "This deletes the user together with all their quizzes and reports."
   },
   "notFound": {
-    "title": "Oops, wrong answer!",
-    "text": "This page doesn't exist. Maybe it popped?",
+    "title": "Page not found",
+    "text": "The page you are looking for may have moved or never existed.",
     "home": "Go home"
   },
   "assign": {
@@ -321,7 +321,7 @@
     "showAnswers": "Show correct answers",
     "showAnswersHint": "Students see the solution after each question.",
     "create": "Create link",
-    "readyTitle": "Homework link ready! 🎉",
+    "readyTitle": "Assignment link ready",
     "readyText": "Share this link or QR code with your students.",
     "link": "Share link",
     "code": "Code: {{code}}",

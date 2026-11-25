@@ -43,8 +43,8 @@
     "slider": "Aralığı kontrol et: en büyük değer en küçükten büyük olmalı ve cevap aralığın içinde olmalı."
   },
   "empty": {
-    "title": "Hadi birkaç soru ekleyelim",
-    "description": "Başlamak için bir soru tipi seç ya da birkaç soruyu AI yazsın."
+    "title": "Henüz soru yok",
+    "description": "Başlamak için bir soru tipi seç."
   },
   "leave": {
     "title": "Kaydetmeden çıkılsın mı?",
@@ -70,7 +70,7 @@
     "points": "Puan",
     "noPointsType": "Bu soru tipi puan vermez.",
     "explanation": "Açıklama",
-    "explanationHint": "Cevap açıklandıktan sonra gösterilir. Öğrenmek için harika!",
+    "explanationHint": "Doğru cevap gösterildikten sonra katılımcılara görünür.",
     "explanationPlaceholder": "Doğru cevap neden bu?"
   },
   "answers": {
@@ -89,7 +89,7 @@
     "double": "Çift puan"
   },
   "image": {
-    "hint": "Bir görsel ekle — sürükle bırak da olur",
+    "hint": "Görsel ekle ya da buraya sürükle",
     "upload": "Görsel yükle",
     "fromUrl": "Bağlantıdan",
     "url": "Görsel bağlantısı",
@@ -107,7 +107,7 @@
     "add": "Cevap ekle",
     "singleHint": "Tek doğru cevabı seçmek için daireye dokun.",
     "multiHint": "Doğru olan tüm cevapları işaretle.",
-    "pollHint": "Anketlerde doğru cevap yok — herkesin fikri önemli."
+    "pollHint": "Anket sorularında doğru cevap yoktur."
   },
   "truefalse": {
     "label": "Doğru cevap",
@@ -144,7 +144,7 @@
   },
   "ai": {
     "improve": "AI yardımı",
-    "working": "Düşünüyor…",
+    "working": "Hazırlanıyor…",
     "improved": "Soru AI tarafından güncellendi",
     "disabledHint": "AI henüz kurulmadı. AI yardımcılarını kullanmak için bir sağlayıcı ya da kendi API anahtarını ekle.",
     "openSettings": "AI ayarlarını aç",
@@ -158,12 +158,12 @@
   },
   "aiGen": {
     "title": "AI ile quiz oluştur",
-    "subtitle": "Bir konu anlat ya da bir kaynak ver — soruları biz yazalım.",
+    "subtitle": "Bir konu yaz ya da kaynak ekle; sorular otomatik hazırlansın.",
     "moreTitle": "Daha fazla soru üret",
     "moreSubtitle": "Yeni sorular bu quizin sonuna eklenir.",
     "moreShort": "AI ile üret",
     "generate": "Üret",
-    "success": "Quizin hazır! Oynamadan önce bir göz at.",
+    "success": "Quiz hazırlandı. Başlatmadan önce soruları gözden geçir.",
     "added_one": "1 soru eklendi",
     "added_other": "{{count}} soru eklendi",
     "tabs": {
@@ -199,13 +199,13 @@
     "audienceHint": "AI'ın doğru üslubu ve seviyeyi seçmesine yardım eder.",
     "audiencePlaceholder": "örn. Lise öğrencileri, ofis ekibi, aile gecesi",
     "working": "Sorular yazılıyor…",
-    "loading1": "Konuyu araştırıyor…",
-    "loading2": "Kafa karıştırıcı yanlış cevaplar düşünüyor…",
-    "loading3": "Bilgileri iki kez kontrol ediyor…",
-    "loading4": "Biraz eğlence katıyor…",
-    "loading5": "Az kaldı, sorular parlatılıyor…",
+    "loading1": "Konu inceleniyor…",
+    "loading2": "Cevap seçenekleri hazırlanıyor…",
+    "loading3": "Bilgiler kontrol ediliyor…",
+    "loading4": "Sorular düzenleniyor…",
+    "loading5": "Son kontroller yapılıyor…",
     "disabledTitle": "AI henüz kurulmadı",
-    "disabledText": "Bu sunucuda bir AI sağlayıcı yok. Soru üretmek için ayarlardan kendi API anahtarını (Claude, OpenAI, OpenRouter ya da yerel Ollama) ekle.",
+    "disabledText": "Bu sitede bir AI sağlayıcı tanımlı değil. Soru üretmek için ayarlardan kendi API anahtarını (Claude, OpenAI, OpenRouter ya da yerel Ollama) ekle.",
     "openSettings": "AI'ı kur"
   }
 }

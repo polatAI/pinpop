@@ -1,6 +1,6 @@
 {
   "appName": "Pinpop",
-  "tagline": "Patlayan canlı quizler.",
+  "tagline": "Canlı quiz platformu.",
   "nav": {
     "dashboard": "Quizlerim",
     "discover": "Keşfet",
@@ -102,7 +102,7 @@
   "footer": {
     "openSource": "AGPL-3.0 lisanslı açık kaynak",
     "selfHost": "Kendi sunucunda kur",
-    "madeWith": "Topluluk tarafından ♥ ile yapıldı"
+    "madeWith": "Topluluk tarafından geliştirilmektedir"
   },
   "errors": {
     "generic": "Bir şeyler ters gitti. Lütfen tekrar dene.",
@@ -111,11 +111,11 @@
     "unauthorized": "Devam etmek için giriş yap.",
     "forbidden": "Buna erişimin yok.",
     "not_found": "Bulunamadı.",
-    "rate_limited": "Biraz yavaşla ve tekrar dene.",
+    "rate_limited": "Çok fazla istek gönderildi. Birkaç saniye sonra tekrar dene.",
     "validation_error": "Lütfen işaretli alanları kontrol et.",
     "invalid_credentials": "E-posta veya şifre hatalı.",
     "email_taken": "Bu e-posta ile zaten bir hesap var.",
-    "registration_closed": "Bu sunucuda kayıtlar kapalı.",
+    "registration_closed": "Bu sitede yeni kayıtlar kapalı.",
     "invalid_quiz": "Quizde hatalı sorular var.",
     "quiz_not_found": "Quiz bulunamadı.",
     "quiz_empty": "Önce en az bir soru ekle.",
@@ -123,7 +123,7 @@
     "ai_unavailable": "AI kullanılamıyor. Ayarlardan bir AI sağlayıcı ekle.",
     "ai_failed": "AI soru üretemedi. Tekrar dene veya isteği değiştir.",
     "ai_rate_limited": "AI sağlayıcısı yoğun. Birazdan tekrar dene.",
-    "ai_daily_limit": "Bu sunucudaki günlük AI limitine ulaştın.",
+    "ai_daily_limit": "Bugünkü AI kullanım limitine ulaştın.",
     "topic_or_source_required": "Bir konu ya da kaynak metin gir.",
     "invalid_url": "Bu bağlantı doğru görünmüyor.",
     "url_unreachable": "Bu bağlantı açılamadı.",
@@ -136,11 +136,11 @@
     "invalid_json": "Bu dosya geçerli bir JSON değil.",
     "empty_csv": "Tablo boş.",
     "too_many_questions": "Bir quizde en fazla 100 soru olabilir.",
-    "user_keys_disabled": "Bu sunucuda kişisel AI anahtarları kapalı.",
+    "user_keys_disabled": "Bu sitede kişisel AI anahtarları kullanılamıyor.",
     "session_required": "Bunu web sitesinden giriş yaparak yap.",
     "too_many_tokens": "Çok fazla API anahtarın var. Önce birini sil.",
     "game_not_found": "Bu PIN ile bir oyun yok.",
-    "game_locked": "Bu oyun sunucu tarafından kilitlendi.",
+    "game_locked": "Bu oyun yeni katılımcılara kapatıldı.",
     "game_full": "Bu oyun dolu.",
     "game_started": "Bu oyun çoktan başladı.",
     "nickname_taken": "Bu takma ad alınmış.",
@@ -148,7 +148,7 @@
     "nickname_inappropriate": "Lütfen daha uygun bir takma ad seç.",
     "not_allowed": "Bunu yapmaya iznin yok.",
     "invalid_answer": "Bu cevap geçersiz.",
-    "too_late": "Süre doldu!",
+    "too_late": "Süre doldu.",
     "already_answered": "Zaten cevap verdin.",
     "bad_request": "Bu istekte bir sorun var.",
     "cannot_change_own_role": "Kendi rolünü değiştiremezsin.",
