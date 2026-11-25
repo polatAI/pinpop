@@ -9,7 +9,7 @@ import { DataTab } from "@/components/pages/settings/DataTab";
 import { ProfileTab } from "@/components/pages/settings/ProfileTab";
 import { SecurityTab } from "@/components/pages/settings/SecurityTab";
 import { Tabs } from "@/components/ui";
-import { useAuth } from "@/hooks/useAuth";
+import { useAiAvailable, useAuth } from "@/hooks/useAuth";
 
 const TABS = ["profile", "security", "ai", "api", "data"] as const;
 type Tab = (typeof TABS)[number];
@@ -22,6 +22,7 @@ const parseHash = (hash: string): Tab => {
 export default function Settings() {
   const { t } = useTranslation("pages");
   const { user } = useAuth();
+  const aiAvailable = useAiAvailable();
   const location = useLocation();
   const navigate = useNavigate();
   const [tab, setTab] = useState<Tab>(() => parseHash(location.hash));
@@ -44,12 +45,16 @@ export default function Settings() {
       <Tabs
         value={tab}
         onChange={(v) => navigate({ hash: v }, { replace: true })}
-        items={TABS.map((v) => ({ value: v, label: t(`settings.tabs.${v}`), icon: icons[v] }))}
+        items={TABS.filter((v) => v !== "ai" || aiAvailable).map((v) => ({
+          value: v,
+          label: t(`settings.tabs.${v}`),
+          icon: icons[v],
+        }))}
         className="mb-6"
       />
       {tab === "profile" && <ProfileTab user={user} />}
       {tab === "security" && <SecurityTab />}
-      {tab === "ai" && <AiTab />}
+      {tab === "ai" && aiAvailable && <AiTab />}
       {tab === "api" && <ApiTab />}
       {tab === "data" && <DataTab />}
     </PageContainer>

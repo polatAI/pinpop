@@ -45,3 +45,7 @@ On Linux add `extra_hosts: ["host.docker.internal:host-gateway"]` to the `pinpop
 ## Privacy
 
 Topics, source texts, fetched pages and uploaded documents are sent to the configured AI provider. Use Ollama if content must not leave your server.
+
+## Turning AI off
+
+Leave `AI_PROVIDER` empty and set `AI_ALLOW_USER_KEYS=false`. Pinpop then hides every AI button (dashboard, editor, settings) and the landing page advertises homework mode instead. The MCP server keeps working: assistants like Claude write the questions themselves and only need a Pinpop API token.

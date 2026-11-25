@@ -15,6 +15,7 @@ import { StartGameDialog } from "@/components/game/StartGameDialog";
 import { ThemeToggle } from "@/components/layout/AppShell";
 import { Button, Dialog, EmptyState, Spinner } from "@/components/ui";
 import { LogoMark } from "@/components/ui/Logo";
+import { useAiAvailable } from "@/hooks/useAuth";
 import { useErrorMessage } from "@/hooks/useErrorMessage";
 import { ApiError, api } from "@/lib/api";
 import { cn } from "@/lib/utils";
@@ -54,6 +55,7 @@ const snapshot = (d: DraftQuiz) => JSON.stringify(d);
 export default function QuizEditor() {
   const { id } = useParams<{ id: string }>();
   const { t, i18n } = useTranslation("editor");
+  const aiAvailable = useAiAvailable();
   const navigate = useNavigate();
   const queryClient = useQueryClient();
   const errorMessage = useErrorMessage();
@@ -330,13 +332,15 @@ export default function QuizEditor() {
             <h2 className="text-sm font-bold tracking-wide text-muted uppercase">
               {t("common:questions", { count: draft.questions.length })}
             </h2>
-            <button
-              type="button"
-              onClick={() => setMoreOpen(true)}
-              className="inline-flex items-center gap-1 rounded-lg px-2 py-1 text-xs font-bold text-pop-600 hover:bg-pop-50 dark:text-pop-300 dark:hover:bg-pop-900/30"
-            >
-              <Sparkles className="size-3.5" /> {t("aiGen.moreShort")}
-            </button>
+            {aiAvailable ? (
+              <button
+                type="button"
+                onClick={() => setMoreOpen(true)}
+                className="inline-flex items-center gap-1 rounded-lg px-2 py-1 text-xs font-bold text-pop-600 hover:bg-pop-50 dark:text-pop-300 dark:hover:bg-pop-900/30"
+              >
+                <Sparkles className="size-3.5" /> {t("aiGen.moreShort")}
+              </button>
+            ) : null}
           </div>
           <div className="min-h-0 flex-1 overflow-y-auto px-3 pb-3">
             <QuestionList
@@ -369,7 +373,7 @@ export default function QuizEditor() {
                 onDelete={remove}
               />
             </div>
-            <MobileAdd onAdd={addQuestion} onAi={() => setMoreOpen(true)} />
+            <MobileAdd onAdd={addQuestion} onAi={aiAvailable ? () => setMoreOpen(true) : undefined} />
           </div>
 
           <div className="min-h-0 flex-1 overflow-y-auto px-3 py-5 sm:px-6 sm:py-8">
@@ -407,9 +411,11 @@ export default function QuizEditor() {
                     action={
                       <div className="flex flex-col items-center gap-3 sm:flex-row">
                         <AddQuestionMenu onAdd={addQuestion} placement="bottom" />
-                        <Button variant="secondary" onClick={() => setMoreOpen(true)}>
-                          <Sparkles className="size-4 text-pop-500" /> {t("aiGen.moreShort")}
-                        </Button>
+                        {aiAvailable ? (
+                          <Button variant="secondary" onClick={() => setMoreOpen(true)}>
+                            <Sparkles className="size-4 text-pop-500" /> {t("aiGen.moreShort")}
+                          </Button>
+                        ) : null}
                       </div>
                     }
                   />
@@ -471,7 +477,7 @@ export default function QuizEditor() {
   );
 }
 
-function MobileAdd({ onAdd, onAi }: { onAdd: (type: QuestionType) => void; onAi: () => void }) {
+function MobileAdd({ onAdd, onAi }: { onAdd: (type: QuestionType) => void; onAi?: () => void }) {
   const { t } = useTranslation("editor");
   const [open, setOpen] = useState(false);
   return (
@@ -487,16 +493,18 @@ function MobileAdd({ onAdd, onAi }: { onAdd: (type: QuestionType) => void; onAi:
               onAdd(type);
             }}
           />
-          <Button
-            variant="secondary"
-            className="w-full"
-            onClick={() => {
-              setOpen(false);
-              onAi();
-            }}
-          >
-            <Sparkles className="size-4 text-pop-500" /> {t("aiGen.moreShort")}
-          </Button>
+          {onAi ? (
+            <Button
+              variant="secondary"
+              className="w-full"
+              onClick={() => {
+                setOpen(false);
+                onAi();
+              }}
+            >
+              <Sparkles className="size-4 text-pop-500" /> {t("aiGen.moreShort")}
+            </Button>
+          ) : null}
         </div>
       </Dialog>
     </>

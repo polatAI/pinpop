@@ -1,4 +1,17 @@
-import { ArrowRight, BarChart3, Bot, Languages, Lock, Moon, Plug, Server, Shapes, Sparkles, Users } from "lucide-react";
+import {
+  ArrowRight,
+  BarChart3,
+  Bot,
+  ClipboardList,
+  Languages,
+  Lock,
+  Moon,
+  Plug,
+  Server,
+  Shapes,
+  Sparkles,
+  Users,
+} from "lucide-react";
 import { motion } from "motion/react";
 import { type FormEvent, useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -8,7 +21,7 @@ import { GITHUB_URL } from "@/components/layout/AppShell";
 import { CopyBox, PageContainer } from "@/components/pages/common";
 import { Button } from "@/components/ui";
 import { GithubIcon } from "@/components/ui/GithubIcon";
-import { useAuth, useInstance } from "@/hooks/useAuth";
+import { useAiAvailable, useAuth, useInstance } from "@/hooks/useAuth";
 import { cn } from "@/lib/utils";
 
 function PinBox({ large }: { large?: boolean }) {
@@ -81,10 +94,13 @@ export default function Landing() {
   const { data: instance } = useInstance();
   const navigate = useNavigate();
   const instanceName = instance?.name ?? "Pinpop";
+  // Instances with AI switched off advertise homework mode instead of the AI writer.
+  const aiAvailable = useAiAvailable();
+  const noAi = instance !== undefined && !aiAvailable;
 
   const features = [
     { icon: Shapes, key: "types", tone: "bg-ans-a" },
-    { icon: Sparkles, key: "ai", tone: "bg-ans-e" },
+    noAi ? { icon: ClipboardList, key: "homework", tone: "bg-ans-e" } : { icon: Sparkles, key: "ai", tone: "bg-ans-e" },
     { icon: Plug, key: "mcp", tone: "bg-ans-b" },
     { icon: Server, key: "selfhost", tone: "bg-ans-d" },
     { icon: Users, key: "realtime", tone: "bg-ans-c" },
@@ -109,7 +125,8 @@ export default function Landing() {
             animate={{ opacity: 1, y: 0 }}
             className="mb-6 inline-flex items-center gap-2 rounded-full border-2 border-ink-900 bg-sun-400 px-4 py-1.5 text-sm font-bold text-ink-900 dark:border-black"
           >
-            <Bot className="size-4" /> {t("landing.badge")}
+            {noAi ? <Users className="size-4" /> : <Bot className="size-4" />}{" "}
+            {t(noAi ? "landing.badgeNoAi" : "landing.badge")}
           </motion.span>
           <motion.h1
             initial={{ opacity: 0, y: 16 }}
@@ -125,7 +142,7 @@ export default function Landing() {
             transition={{ delay: 0.1 }}
             className="mt-6 max-w-2xl text-lg text-muted text-balance sm:text-xl"
           >
-            {t("landing.subtitle", { name: instanceName })}
+            {t(noAi ? "landing.subtitleNoAi" : "landing.subtitle", { name: instanceName })}
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 16 }}
@@ -168,7 +185,9 @@ export default function Landing() {
                   {i + 1}
                 </div>
                 <h3 className="text-xl font-bold">{t(`landing.steps.${step}.title`)}</h3>
-                <p className="mt-2 text-muted">{t(`landing.steps.${step}.text`)}</p>
+                <p className="mt-2 text-muted">
+                  {t(noAi && step === "create" ? "landing.steps.create.textNoAi" : `landing.steps.${step}.text`)}
+                </p>
               </div>
             );
           })}

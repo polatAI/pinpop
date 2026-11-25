@@ -23,7 +23,7 @@ import { ConfirmDialog } from "@/components/pages/ConfirmDialog";
 import { PageContainer, PageHeader, QuizCard } from "@/components/pages/common";
 import { ImportDialog } from "@/components/pages/ImportDialog";
 import { Button, EmptyState, Input, Spinner } from "@/components/ui";
-import { useAuth } from "@/hooks/useAuth";
+import { useAiAvailable, useAuth } from "@/hooks/useAuth";
 import { useErrorMessage } from "@/hooks/useErrorMessage";
 import { api, download } from "@/lib/api";
 import type { Paginated, QuizSummary } from "@/shared";
@@ -133,6 +133,7 @@ function CardMenu({ quiz, onDelete, onAssign }: { quiz: QuizSummary; onDelete: (
 
 export default function Dashboard() {
   const { t } = useTranslation("pages");
+  const aiAvailable = useAiAvailable();
   const { user } = useAuth();
   const navigate = useNavigate();
   const client = useQueryClient();
@@ -179,9 +180,11 @@ export default function Dashboard() {
             <Button variant="secondary" onClick={() => setImportOpen(true)}>
               <Upload className="size-4" /> {t("common:actions.import")}
             </Button>
-            <Button variant="sun" onClick={() => setAiOpen(true)}>
-              <Sparkles className="size-4" /> {t("dashboard.generateAi")}
-            </Button>
+            {aiAvailable ? (
+              <Button variant="sun" onClick={() => setAiOpen(true)}>
+                <Sparkles className="size-4" /> {t("dashboard.generateAi")}
+              </Button>
+            ) : null}
             <Button onClick={() => navigate("/quiz/new")}>
               <Plus className="size-4" /> {t("dashboard.newQuiz")}
             </Button>
@@ -216,9 +219,11 @@ export default function Dashboard() {
                 <Button onClick={() => navigate("/quiz/new")}>
                   <Plus className="size-4" /> {t("dashboard.newQuiz")}
                 </Button>
-                <Button variant="sun" onClick={() => setAiOpen(true)}>
-                  <Sparkles className="size-4" /> {t("dashboard.generateAi")}
-                </Button>
+                {aiAvailable ? (
+                  <Button variant="sun" onClick={() => setAiOpen(true)}>
+                    <Sparkles className="size-4" /> {t("dashboard.generateAi")}
+                  </Button>
+                ) : null}
               </div>
             }
           />

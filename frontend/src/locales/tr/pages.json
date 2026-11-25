@@ -14,7 +14,8 @@
     "steps": {
       "create": {
         "title": "Oluştur",
-        "text": "8 soru tipiyle dakikalar içinde quiz hazırla ya da bir konudan, PDF'ten veya web sayfasından yapay zekâyla üret."
+        "text": "8 soru tipiyle dakikalar içinde quiz hazırla ya da bir konudan, PDF'ten veya web sayfasından yapay zekâyla üret.",
+        "textNoAi": "8 soru tipiyle dakikalar içinde quiz hazırla, bir tablodan içe aktar ya da MCP üzerinden AI asistanına yazdır."
       },
       "host": {
         "title": "Başlat",
@@ -67,6 +68,10 @@
       "dark": {
         "title": "Açık ve koyu tema",
         "text": "Projeksiyonda, dizüstünde ya da karanlık odada telefonda harika görünür."
+      },
+      "homework": {
+        "title": "Ödev modu",
+        "text": "Bir bağlantı paylaş, öğrenciler kendi hızlarında oynasın. Sonuçlar raporlarına düşer."
       }
     },
     "selfHostTitle": "Senin sunucun, senin verin",
@@ -77,7 +82,9 @@
       "three": "REST API, OpenAPI dokümanı ve entegrasyon dostu tasarım"
     },
     "selfHostNote": "Sonra http://localhost:3000 adresini aç — ilk hesap yönetici olur.",
-    "finalTitle": "Bir sonraki etkinliğini unutulmaz yapmaya hazır mısın?"
+    "finalTitle": "Bir sonraki etkinliğini unutulmaz yapmaya hazır mısın?",
+    "badgeNoAi": "Açık kaynak · Ücretsiz · Kendi sunucunda çalışır",
+    "subtitleNoAi": "{{name}} her sınıfı, buluşmayı ya da partiyi bir yarışma programına çevirir. Sorularını yaz, PIN'i paylaş ve birlikte canlı oynayın."
   },
   "auth": {
     "loginTitle": "Tekrar hoş geldin",

@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from "motion/react";
 import { type ReactNode, useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Button, Card, Field, Select, Textarea } from "@/components/ui";
+import { useAiAvailable } from "@/hooks/useAuth";
 import { cn } from "@/lib/utils";
 import { POINTS_MODES, type Question, type QuestionType, SCORED_TYPES, TIME_LIMITS } from "@/shared";
 import { QuestionTypeGrid } from "./AddQuestionMenu";
@@ -102,6 +103,7 @@ export function QuestionEditor({
   onDelete: () => void;
 }) {
   const { t } = useTranslation("editor");
+  const aiAvailable = useAiAvailable();
   const patch = (p: Partial<Question>) => onChange({ ...question, ...p } as Question);
   const scored = SCORED_TYPES.has(question.type);
 
@@ -152,7 +154,7 @@ export function QuestionEditor({
         <span className="font-display text-lg font-extrabold text-muted">{t("question.number", { n: index + 1 })}</span>
         <TypeSwitcher type={question.type} onChange={(type) => onReplace(makeQuestion(type, question))} />
         <div className="ml-auto flex items-center gap-1">
-          <AiImproveMenu question={question} onImproved={onReplace} />
+          {aiAvailable ? <AiImproveMenu question={question} onImproved={onReplace} /> : null}
           <Button
             size="icon"
             variant="ghost"

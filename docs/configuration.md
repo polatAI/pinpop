@@ -22,6 +22,6 @@ All configuration is done with environment variables (see [`.env.example`](../.e
 | `AI_API_KEY`                                | –                        | Key for the provider above.                                                                                                       |
 | `AI_MODEL`                                  | per provider             | Model name override.                                                                                                              |
 | `AI_BASE_URL`                               | per provider             | Custom endpoint (required for `openai-compatible`; Ollama defaults to `http://localhost:11434/v1`).                               |
-| `AI_ALLOW_USER_KEYS`                        | `true`                   | Let users configure their own AI provider/key (encrypted at rest).                                                                |
+| `AI_ALLOW_USER_KEYS`                        | `true`                   | Let users configure their own AI provider/key (encrypted at rest). With this `false` and no `AI_PROVIDER`, all AI buttons are hidden. |
 | `AI_DAILY_LIMIT`                            | `0`                      | AI generations per user per day with the server key (`0` = unlimited). Personal keys are never limited.                           |
 | `HOSTED_MODE`                               | `false`                  | Marks the instance as a public hosted service.                                                                                    |
